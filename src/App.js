@@ -10,7 +10,7 @@ import { CartProvider } from './contexts/CartContext';
 
 function App() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename='/Proyecto-Final-React'>
         <CartProvider>
           <NavBar />
             <Routes>
