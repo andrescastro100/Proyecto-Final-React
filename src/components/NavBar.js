@@ -7,14 +7,17 @@ return (
     <Navbar bg="dark" variant="dark">
     <Container>
         <Navbar.Brand as={Link} to='/'>
-        Bar Don Quijote
+        Drink Party
         </Navbar.Brand>
         <Nav className="me-auto">
         <Nav.Link as={Link} to='/'>
             Home
         </Nav.Link>
-        <Nav.Link as={Link} to='/category/carne'>Con Carne</Nav.Link>
-        <Nav.Link as={Link} to='/category/vegetariana'>Vegetariana</Nav.Link>
+        <Nav.Link as={Link} to='/category/vino'>Vino</Nav.Link>
+        <Nav.Link as={Link} to='/category/bermut'>Bermut</Nav.Link>
+        <Nav.Link as={Link} to='/category/cerveza'>Cerveza</Nav.Link>
+        <Nav.Link as={Link} to='/category/vodka'>Vodka</Nav.Link>
+        <Nav.Link as={Link} to='/category/Whisky'>Whisky</Nav.Link>
         </Nav>
         <CartWidget />
     </Container>

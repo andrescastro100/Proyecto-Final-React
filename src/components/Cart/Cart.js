@@ -22,6 +22,9 @@ const [orderId, setOrderId] = useState();
 const handleRemove = (itemId) => {
     removeItem(itemId);
 }
+const handleDelete = () => {
+    clear();
+}
 
 const handleOpen = () => setShowModal(true);
 
@@ -67,6 +70,7 @@ return (
         </Table>
         <h3>Total: $ {total}</h3>
         <Button variant="success" onClick={handleOpen}>Finalizar compra</Button>
+        <Button variant="danger" onClick={handleDelete}>Vaciar Carrito</Button>
         </>
     )}
     {!showTable && (
